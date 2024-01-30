@@ -1,0 +1,10 @@
+<h1>hola handlebars</h1>
+
+{{#each imagenes}}
+  <div class="card">
+    <img src={{this.path}} alt="">
+    <h3>{{this.title}}</h3>
+    <p>{{this.description}}</p>
+    <a href="/img/{{this._id}}/delete">Eliminar</a>
+  </div>
+{{/each}}
